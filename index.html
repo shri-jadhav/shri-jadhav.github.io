@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,12 +9,13 @@
   <meta name="description" content="Portfolio of Shripad Jadhav - Cybersecurity Undergraduate at NMIMS Mumbai specializing in Cloud Security, Detection Engineering, Wazuh SIEM, and SOC Operations.">
   <meta name="keywords" content="Shripad Jadhav, Cybersecurity, Cloud Security, SOC, Wazuh, AWS Security, Detection Engineering, MITRE ATT&CK, Terraform">
   <meta name="author" content="Shripad Jadhav">
+  <meta name="theme-color" content="#07090e">
   <meta property="og:title" content="Shripad Jadhav | Cybersecurity & Cloud Security Portfolio">
   <meta property="og:description" content="Fail-closed AWS security tooling, Wazuh SIEM correlation, and adversary tradecraft analysis.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://shri-jadhav.github.io">
 
-  <!-- Clean Google Fonts (Plus Jakarta Sans & JetBrains Mono) -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -41,7 +42,7 @@
         <ul class="nav-links">
           <li><a href="#about" class="nav-link">About</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#threats" class="nav-link">Threat Reports</a></li>
+          <li><a href="#threats" class="nav-link">Threats</a></li>
           <li><a href="#experience" class="nav-link">SOC Experience</a></li>
           <li><a href="#mitre" class="nav-link">MITRE Matrix</a></li>
           <li><a href="#skills" class="nav-link">Skills</a></li>
@@ -51,18 +52,20 @@
       </nav>
 
       <div class="nav-actions">
-        <button id="termToggleBtn" class="term-toggle-btn" title="Open Interactive SOC Terminal" aria-label="Terminal Mode">
+        <button id="termToggleBtn" class="header-icon-btn" title="Open Interactive SOC Terminal" aria-label="Terminal Mode">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
             <polyline points="4 17 10 11 4 5"/>
             <line x1="12" y1="19" x2="20" y2="19"/>
           </svg>
         </button>
 
-        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+        <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="header-icon-btn" title="Connect on LinkedIn" aria-label="LinkedIn">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+            <rect x="2" y="9" width="4" height="12"/>
+            <circle cx="4" cy="4" r="2"/>
           </svg>
-        </button>
+        </a>
 
         <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
       </div>
@@ -75,11 +78,11 @@
       <div class="container">
         <div class="hero-pill-badge">
           <span class="status-dot"></span>
-          <span>B.Tech CSE (Cybersecurity) @ NMIMS Mumbai • Expected 2028</span>
+          <span>B.Tech CSE (Cybersecurity) &bull; NMIMS Mumbai &bull; Class of 2028</span>
         </div>
 
         <h1 class="hero-title">
-          Engineering <span class="gradient-text">Fail-Closed</span> Cloud Defense & SOC Telemetry.
+          Engineering <span class="gradient-cyan">Fail-Closed</span> Cloud Defense & SOC Telemetry.
         </h1>
 
         <p class="hero-subtitle">
@@ -87,7 +90,7 @@
         </p>
 
         <p class="hero-description">
-          I build practical security tools that validate callers before taking action, engineer telemetry pipelines in Wazuh and Splunk that turn raw logs into actionable incident detections, and analyze real-world adversary tradecraft from memory dumps to cloud identity controls.
+          I build practical security tools that validate callers before taking action, engineer telemetry pipelines in Wazuh and Splunk that turn raw events into actionable incident detections, and dissect adversary tradecraft from memory dumps to cloud identity perimeters.
         </p>
 
         <div class="hero-cta-group">
@@ -95,16 +98,17 @@
             <span>Explore Projects</span>
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
           </a>
-          <a href="#threats" class="btn btn-secondary">
-            <span>Read Threat Reports</span>
+          <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <span>LinkedIn Profile</span>
           </a>
           <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
             <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
             <span>GitHub Profile</span>
           </a>
           <a href="resume.html" target="_blank" class="btn btn-secondary">
-            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
-            <span>Clean CV View</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+            <span>Printable CV</span>
           </a>
         </div>
 
@@ -112,27 +116,27 @@
         <div class="hero-quick-meta">
           <div class="meta-item">
             <div class="meta-icon">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
             </div>
             <div>
-              <div class="meta-label">Primary Focus</div>
+              <div class="meta-label">Specialization</div>
               <div class="meta-value">Cloud Security & Detection Eng.</div>
             </div>
           </div>
 
           <div class="meta-item">
             <div class="meta-icon">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
             </div>
             <div>
-              <div class="meta-label">Core Tooling</div>
+              <div class="meta-label">Primary Stack</div>
               <div class="meta-value">AWS, Wazuh, Python, Terraform</div>
             </div>
           </div>
 
           <div class="meta-item">
             <div class="meta-icon">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
             </div>
             <div>
               <div class="meta-label">Location & Timezone</div>
@@ -142,18 +146,18 @@
 
           <div class="meta-item">
             <div class="meta-icon">
-              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
             </div>
             <div>
               <div class="meta-label">Verification Suite</div>
-              <div class="meta-value">70+ Unit Tests & Synthetic Scenarios</div>
+              <div class="meta-value">70+ Tests & Synthetic Scenarios</div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Engineering Philosophy (Humanized) -->
+    <!-- Engineering Philosophy -->
     <section class="section">
       <div class="container">
         <div class="section-header">
@@ -165,31 +169,31 @@
         <div class="philosophy-grid">
           <div class="philosophy-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
               Fail-Closed by Design
             </h3>
             <p>
-              I believe tools must refuse to proceed when state cannot be explicitly trusted. In <strong>VYRA</strong>, STS caller account verification aborts execution before inspecting any AWS resource, ensuring zero inadvertent cross-account leakage.
+              Tools must refuse to proceed when state cannot be explicitly trusted. In <strong>VYRA</strong>, STS caller account verification aborts execution before inspecting any AWS resource, ensuring zero inadvertent cross-account leakage.
             </p>
           </div>
 
           <div class="philosophy-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
               Telemetry Over Noise
             </h3>
             <p>
-              Alert fatigue destroys SOC effectiveness. In my <strong>Wazuh SOC Homelab</strong>, I pair Windows Security logs (4624, 4625, 4728) with a 6-rule correlation engine that tests for multi-target password spraying and MFA fatigue instead of naive one-off thresholds.
+              Alert fatigue destroys SOC effectiveness. In my <strong>Wazuh SOC Homelab</strong>, I pair Windows Security logs (4624, 4625, 4728) with a 6-rule correlation engine testing for multi-target password spraying and MFA fatigue instead of naive one-off thresholds.
             </p>
           </div>
 
           <div class="philosophy-card">
             <h3>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
               Adversary-Centric Curiosity
             </h3>
             <p>
-              Effective defense requires knowing how adversaries operate. My research into attacks like <strong>Midnight Blizzard</strong> and <strong>Change Healthcare</strong> directly shapes my policy gates and identity federation checks.
+              Effective defense requires understanding real attacks. My research into campaigns like <strong>Midnight Blizzard</strong> and <strong>Change Healthcare</strong> directly shapes my policy gates and identity federation checks.
             </p>
           </div>
         </div>
@@ -240,7 +244,7 @@
             <button class="term-chip" data-cmd="clear">clear</button>
           </div>
 
-          <div style="padding: 0.5rem 1.25rem 0.85rem; background-color: var(--term-bg); border-top: 1px solid rgba(255,255,255,0.05);">
+          <div style="padding: 0.65rem 1.25rem 0.85rem; background-color: var(--term-bg); border-top: 1px solid rgba(255,255,255,0.05);">
             <div class="term-input-row">
               <span class="term-prompt">shripad@soc-workstation:~$</span>
               <input type="text" id="termInput" class="term-input" placeholder="type 'help', 'projects', 'mitre'..." autocomplete="off" spellcheck="false">
@@ -259,11 +263,13 @@
           <p class="section-desc">Production-grade security workbenches, serverless backends, and detection engineering homelabs with strict test validation.</p>
         </div>
 
-        <div class="project-filters">
-          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
-          <button class="filter-btn" data-filter="cloud">Cloud Security</button>
-          <button class="filter-btn" data-filter="siem">SIEM & Detection</button>
-          <button class="filter-btn" data-filter="devsecops">DevSecOps & Fullstack</button>
+        <div class="project-filters-wrap">
+          <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+            <button class="filter-btn" data-filter="cloud">Cloud Security</button>
+            <button class="filter-btn" data-filter="siem">SIEM & Detection</button>
+            <button class="filter-btn" data-filter="devsecops">DevSecOps & Fullstack</button>
+          </div>
         </div>
 
         <div class="projects-grid">
@@ -271,12 +277,12 @@
           <article class="project-card" data-category="cloud devsecops">
             <div class="project-top">
               <div class="project-badges">
-                <span class="badge badge-blue">AWS Cloud Security</span>
+                <span class="badge badge-cyan">AWS Cloud Security</span>
                 <span class="badge badge-mono">SARIF 2.1.0</span>
               </div>
               <div class="project-links">
                 <a href="https://github.com/shri-jadhav/VYRA" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
             </div>
@@ -309,8 +315,9 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                 Fail-Closed & Offline Tested
               </span>
-              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="vyra">
-                Inspect Architecture
+              <button class="arrow-action open-modal-btn" data-project="vyra">
+                <span>Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
             </div>
           </article>
@@ -324,7 +331,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/shri-jadhav/homelab.lv4" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
             </div>
@@ -357,8 +364,9 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                 37 Tests Passed • 10 Scenarios
               </span>
-              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="wazuh">
-                Inspect Architecture
+              <button class="arrow-action open-modal-btn" data-project="wazuh">
+                <span>Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
             </div>
           </article>
@@ -372,7 +380,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub Profile">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
             </div>
@@ -405,8 +413,9 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                 33 Passing pytest Tests
               </span>
-              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="drainsentinel">
-                Inspect Architecture
+              <button class="arrow-action open-modal-btn" data-project="drainsentinel">
+                <span>Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
             </div>
           </article>
@@ -420,7 +429,7 @@
               </div>
               <div class="project-links">
                 <a href="https://github.com/shri-jadhav/ZeroGate" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 </a>
               </div>
             </div>
@@ -452,8 +461,9 @@
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
                 OIDC Federated Identity
               </span>
-              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="zerogate">
-                Inspect Architecture
+              <button class="arrow-action open-modal-btn" data-project="zerogate">
+                <span>Architecture</span>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
               </button>
             </div>
           </article>
@@ -471,9 +481,9 @@
               <h2 class="section-title">Threat Analysis Reports</h2>
               <p class="section-desc">Detailed incident investigations breaking down real-world kill chains, IOCs, and detection lessons.</p>
             </div>
-            <a href="https://github.com/shri-jadhav/soc-incident-reports" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            <a href="https://github.com/shri-jadhav/soc-incident-reports" target="_blank" rel="noopener noreferrer" class="arrow-action">
               <span>View All Reports on GitHub</span>
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
             </a>
           </div>
         </div>
@@ -488,7 +498,7 @@
 
             <h3 class="threat-title">Microsoft Midnight Blizzard</h3>
             <div class="threat-vector">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               <span>Password Spraying & OAuth Token Abuse</span>
             </div>
 
@@ -521,7 +531,7 @@
 
             <h3 class="threat-title">Change Healthcare Ransomware</h3>
             <div class="threat-vector">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               <span>Single-Factor Remote Portal Credential Theft</span>
             </div>
 
@@ -548,13 +558,13 @@
           <!-- Report 3: Colonial Pipeline -->
           <article class="threat-card">
             <div class="threat-header">
-              <span class="badge badge-blue">DarkSide Ransomware</span>
+              <span class="badge badge-cyan">DarkSide Ransomware</span>
               <span class="threat-year">2021</span>
             </div>
 
             <h3 class="threat-title">Colonial Pipeline Ransomware</h3>
             <div class="threat-vector">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
               <span>Legacy VPN Credential Leak & OT Shutdown</span>
             </div>
 
@@ -609,7 +619,7 @@
               <div class="experience-deliverables">
                 <div class="deliverable-box">
                   <div class="deliverable-title">
-                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
                     <span>Host Hardening & Forensics</span>
                   </div>
                   <div class="deliverable-text">
@@ -699,22 +709,22 @@
             <!-- Populated dynamically via JS -->
             <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
               <div>
-                <span class="badge badge-blue" style="font-family:var(--font-mono);">T1110</span>
-                <strong style="font-size:1.1rem; color:var(--text-primary); margin-left:0.5rem;">Brute Force</strong>
+                <span class="badge badge-cyan">T1110</span>
+                <strong style="font-size:1.05rem; color:#ffffff; margin-left:0.5rem;">Brute Force</strong>
               </div>
               <span class="badge badge-amber">Credential Access</span>
             </div>
             <div style="margin-bottom:0.75rem;">
-              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Telemetry & Log Sources:</div>
-              <div style="font-size:0.875rem; font-family:var(--font-mono); color:var(--text-secondary); background:var(--bg-card); padding:0.5rem 0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">Windows Event ID 4625 (Logon Failure), Linux auth.log, AWS CloudTrail ConsoleLogin</div>
+              <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Telemetry & Log Sources:</div>
+              <div style="font-size:0.85rem; font-family:var(--font-mono); color:var(--text-secondary); background:rgba(255,255,255,0.03); padding:0.5rem 0.75rem; border-radius:var(--radius-xs); border:1px solid var(--border-subtle);">Windows Event ID 4625 (Logon Failure), Linux auth.log, AWS CloudTrail ConsoleLogin</div>
             </div>
             <div style="margin-bottom:0.75rem;">
-              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Detection Engineering Logic:</div>
-              <div style="font-size:0.875rem; color:var(--text-secondary); line-height:1.5;">Sigma & Python: Triggers when &gt;= 5 failed authentication events occur within 60 seconds from a single IP/host with sub-status 0xC000006A (bad password).</div>
+              <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Detection Engineering Logic:</div>
+              <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5;">Sigma & Python: Triggers when &gt;= 5 failed authentication events occur within 60 seconds from a single IP/host with sub-status 0xC000006A (bad password).</div>
             </div>
             <div>
-              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Homelab & Capstone Validation:</div>
-              <div style="font-size:0.875rem; color:var(--accent-emerald); font-weight:500; line-height:1.5;">Simulated via Hydra & PowerShell test harness. Verified 100% catch rate in Wazuh SOC homelab benchmark without alerting on normal user typo rate.</div>
+              <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Homelab & Capstone Validation:</div>
+              <div style="font-size:0.85rem; color:var(--accent-emerald); font-weight:500; line-height:1.5;">Simulated via Hydra & PowerShell test harness. Verified 100% catch rate in Wazuh SOC homelab benchmark without alerting on normal user typo rate.</div>
             </div>
           </div>
         </div>
@@ -733,11 +743,11 @@
         <div class="skills-container">
           <div class="skills-card">
             <h3 class="skills-card-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
               <span>Languages</span>
             </h3>
             <div class="skills-pill-wrap">
-              <span class="skill-pill">Python (Advanced Security Tooling)</span>
+              <span class="skill-pill">Python (Security Tooling)</span>
               <span class="skill-pill">JavaScript</span>
               <span class="skill-pill">SQL</span>
               <span class="skill-pill">C++</span>
@@ -788,7 +798,7 @@
 
           <div class="skills-card">
             <h3 class="skills-card-title">
-              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-blue)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
               <span>Security Tools</span>
             </h3>
             <div class="skills-pill-wrap">
@@ -808,7 +818,7 @@
       </div>
     </section>
 
-    <!-- Education, Certifications & Continuous Training -->
+    <!-- Education & Certifications -->
     <section class="section" id="certs">
       <div class="container">
         <div class="section-header">
@@ -818,23 +828,23 @@
         </div>
 
         <!-- Education Card -->
-        <div style="background-color:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:1.75rem; margin-bottom:2rem; box-shadow:var(--shadow-subtle);">
+        <div style="background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:1.75rem; margin-bottom:2rem; backdrop-filter:blur(12px);">
           <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
             <div>
-              <span class="badge badge-blue">Degree Program</span>
-              <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-top:0.35rem;">B.Tech in Computer Science and Engineering (Cybersecurity)</h3>
-              <div style="font-size:1rem; font-weight:600; color:var(--accent-primary);">Mukesh Patel School of Technology Management & Engineering (MPSTME)</div>
-              <div style="font-size:0.9rem; color:var(--text-secondary);">NMIMS University, Mumbai, Maharashtra, India</div>
+              <span class="badge badge-cyan">Degree Program</span>
+              <h3 style="font-size:1.35rem; font-weight:700; color:#ffffff; margin-top:0.35rem;">B.Tech in Computer Science and Engineering (Cybersecurity)</h3>
+              <div style="font-size:0.95rem; font-weight:500; color:var(--accent-cyan);">Mukesh Patel School of Technology Management & Engineering (MPSTME)</div>
+              <div style="font-size:0.875rem; color:var(--text-muted);">NMIMS University, Mumbai, Maharashtra, India</div>
             </div>
-            <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted); font-weight:600;">Expected 2028</div>
+            <div style="font-family:var(--font-mono); font-size:0.825rem; color:var(--text-muted); font-weight:600;">Expected 2028</div>
           </div>
-          <p style="font-size:0.925rem; color:var(--text-secondary); line-height:1.6; margin-top:0.75rem;">
+          <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.6; margin-top:0.75rem;">
             Rigorous 4-year curriculum covering Cryptography, Network Security, Operating Systems, Cloud Security Architecture, Threat Modeling, and Information Security Management.
           </p>
         </div>
 
         <!-- Certifications Shelf -->
-        <h3 style="font-size:1.2rem; font-weight:700; color:var(--text-primary); margin-bottom:1rem;">Verified Certifications & Training Badges</h3>
+        <h3 style="font-size:1.15rem; font-weight:600; color:#ffffff; margin-bottom:1rem;">Verified Certifications & Training Badges</h3>
         <div class="certs-shelf">
           <div class="cert-card">
             <div class="cert-icon">AWS</div>
@@ -862,11 +872,11 @@
         </div>
 
         <!-- AWS Training Modules Shelf -->
-        <div style="margin-top:2.5rem; padding:1.75rem; background-color:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg);">
-          <h3 style="font-size:1.1rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">
+        <div style="margin-top:2.5rem; padding:1.75rem; background:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); backdrop-filter:blur(12px);">
+          <h3 style="font-size:1.05rem; font-weight:600; color:#ffffff; margin-bottom:0.5rem;">
             AWS Training & Certification Specialty Modules
           </h3>
-          <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:1rem;">
+          <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:1rem;">
             Completed official deep-dive modules across cloud identity, threat detection, and perimeter defense:
           </p>
           <div class="aws-modules-grid">
@@ -896,37 +906,48 @@
 
         <div class="contact-layout">
           <div class="contact-info-card">
-            <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">Direct Channels</h3>
-            <p style="font-size:0.925rem; color:var(--text-secondary); line-height:1.6;">
+            <h3 style="font-size:1.25rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">Direct Channels</h3>
+            <p style="font-size:0.9rem; color:var(--text-secondary); line-height:1.6;">
               Whether you have an inquiry about my projects, wish to review my homelab configurations, or discuss security engineering roles, my inbox is always open.
             </p>
 
             <div class="contact-channels">
               <div class="channel-item">
                 <div class="channel-left">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
                   <div>
                     <div class="channel-label">Email</div>
                     <a href="mailto:shripadjadhav1979@gmail.com" class="channel-value">shripadjadhav1979@gmail.com</a>
                   </div>
                 </div>
-                <button class="copy-btn" data-copy="shripadjadhav1979@gmail.com">Copy</button>
+                <button class="copy-chip-btn" data-copy="shripadjadhav1979@gmail.com">Copy</button>
               </div>
 
               <div class="channel-item">
                 <div class="channel-left">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                  <div>
+                    <div class="channel-label">LinkedIn</div>
+                    <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="channel-value">shripad-jadhav-b47099320</a>
+                  </div>
+                </div>
+                <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="copy-chip-btn">Visit &rarr;</a>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-left">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                   <div>
                     <div class="channel-label">Phone</div>
                     <a href="tel:+919892301256" class="channel-value">+91 9892301256</a>
                   </div>
                 </div>
-                <button class="copy-btn" data-copy="+919892301256">Copy</button>
+                <button class="copy-chip-btn" data-copy="+919892301256">Copy</button>
               </div>
 
               <div class="channel-item">
                 <div class="channel-left">
-                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
                   <div>
                     <div class="channel-label">Location</div>
                     <span class="channel-value">Mumbai, Maharashtra, India</span>
@@ -936,14 +957,14 @@
               </div>
             </div>
 
-            <div style="display:flex; gap:1rem; align-items:center;">
+            <div style="display:flex; gap:0.75rem; align-items:center; flex-wrap:wrap;">
+              <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn</span>
+              </a>
               <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
                 <span>GitHub</span>
-              </a>
-              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
-                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-                <span>LinkedIn</span>
               </a>
               <a href="resume.html" target="_blank" class="btn btn-secondary btn-sm">
                 <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
@@ -954,8 +975,8 @@
 
           <!-- Quick Email Composition Form -->
           <form class="contact-form" id="contactForm">
-            <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">Send a Direct Message</h3>
-            <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.5rem;">Pre-fills your local email client with your exact query.</p>
+            <h3 style="font-size:1.25rem; font-weight:700; color:#ffffff; margin-bottom:0.5rem;">Send a Direct Message</h3>
+            <p style="font-size:0.875rem; color:var(--text-muted); margin-bottom:1.5rem;">Pre-fills your local email client with your exact query.</p>
 
             <div class="form-group">
               <label for="senderName" class="form-label">Your Name *</label>
@@ -991,7 +1012,7 @@
   <footer class="site-footer">
     <div class="container footer-inner">
       <div>
-        <div style="font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Shripad Jadhav</div>
+        <div style="font-weight:600; color:#ffffff; margin-bottom:0.25rem;">Shripad Jadhav</div>
         <div>Cybersecurity Undergraduate &bull; Mumbai, India &bull; Class of 2028</div>
       </div>
 
@@ -1000,6 +1021,7 @@
         <a href="#projects" class="footer-link">Projects</a>
         <a href="#threats" class="footer-link">Threats</a>
         <a href="#mitre" class="footer-link">MITRE</a>
+        <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" rel="noopener noreferrer" class="footer-link">LinkedIn</a>
         <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
       </div>
     </div>
@@ -1010,15 +1032,15 @@
     <div class="modal-content">
       <div class="modal-header">
         <div>
-          <h3 id="modalTitle" style="font-size:1.35rem; font-weight:700; color:var(--text-primary);">Project Title</h3>
-          <div id="modalSubtitle" style="font-size:0.875rem; color:var(--accent-primary); font-weight:600; margin-top:0.2rem;">Subtitle</div>
+          <h3 id="modalTitle" style="font-size:1.35rem; font-weight:700; color:#ffffff;">Project Title</h3>
+          <div id="modalSubtitle" style="font-size:0.85rem; color:var(--accent-cyan); font-weight:500; margin-top:0.2rem;">Subtitle</div>
         </div>
         <button class="modal-close-btn" id="modalClose" aria-label="Close modal">&times;</button>
       </div>
       <div class="modal-body" id="modalBody">
         <!-- Injected via JS -->
       </div>
-      <div style="padding:1rem 1.75rem; background-color:var(--bg-secondary); border-top:1px solid var(--border-subtle); display:flex; justify-content:flex-end; gap:0.75rem;">
+      <div style="padding:1rem 1.75rem; background-color:var(--bg-surface); border-top:1px solid var(--border-subtle); display:flex; justify-content:flex-end; gap:0.75rem;">
         <a href="#" id="modalGithubLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
           <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
           <span>View on GitHub</span>

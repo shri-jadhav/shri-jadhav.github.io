@@ -1,10 +1,10 @@
 /**
  * Shripad Jadhav - Cybersecurity & Cloud Security Portfolio
- * Interactive Functionality: Terminal, MITRE Explorer, Filter, Modals, Theme
+ * Interactive Functionality: Terminal, MITRE Explorer, Filter, Modals, Copy
+ * High-Precision Crafted Dark Mode
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-  initTheme();
   initTerminal();
   initProjectFilters();
   initMitreExplorer();
@@ -13,37 +13,6 @@ document.addEventListener('DOMContentLoaded', () => {
   initCopyButtons();
   initSmoothScroll();
 });
-
-/* ==========================================================================
-   Theme Management (Default: Clean Minimal Light, Optional: Stealth SOC Dark)
-   ========================================================================== */
-function initTheme() {
-  const themeToggle = document.getElementById('themeToggle');
-  const storedTheme = localStorage.getItem('shripad-theme') || 'light';
-  
-  document.documentElement.setAttribute('data-theme', storedTheme);
-  updateThemeIcon(storedTheme);
-
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      const current = document.documentElement.getAttribute('data-theme') || 'light';
-      const next = current === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', next);
-      localStorage.setItem('shripad-theme', next);
-      updateThemeIcon(next);
-      showToast(`Switched to ${next === 'dark' ? 'Stealth SOC Dark' : 'Clean Minimal Light'} mode`);
-    });
-  }
-}
-
-function updateThemeIcon(theme) {
-  const themeToggle = document.getElementById('themeToggle');
-  if (!themeToggle) return;
-  themeToggle.innerHTML = theme === 'dark' 
-    ? `<svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>`
-    : `<svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>`;
-  themeToggle.setAttribute('title', `Toggle ${theme === 'light' ? 'Dark' : 'Light'} Mode`);
-}
 
 /* ==========================================================================
    Interactive SOC Terminal Widget
@@ -121,8 +90,7 @@ function initTerminal() {
   <span class="term-cmd">mitre</span>       - MITRE ATT&CK detection engineering matrix
   <span class="term-cmd">skills</span>      - Languages, cloud security, SIEM & forensic toolsets
   <span class="term-cmd">certs</span>       - AWS Academy, Johns Hopkins, Deepfence & AWS modules
-  <span class="term-cmd">contact</span>     - Direct contact info, GitHub & LinkedIn
-  <span class="term-cmd">theme</span>       - Toggle between Light and Stealth SOC mode
+  <span class="term-cmd">contact</span>     - Direct contact info, LinkedIn & GitHub
   <span class="term-cmd">clear</span>       - Clear the console output
         `);
         break;
@@ -133,6 +101,7 @@ function initTerminal() {
 • University: Mukesh Patel School of Technology Management & Engineering (MPSTME), NMIMS Mumbai
 • Focus: Cloud Security Architecture, SOC Operations, Detection Engineering & Incident Response
 • Philosophy: "Fail-closed by design, validate STS callers before audit, and correlate alerts into actionable intelligence."
+• LinkedIn: <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" style="color:#38bdf8;">linkedin.com/in/shripad-jadhav-b47099320</a>
 • Seeking: Security Engineering & Tier-2/3 SOC Internships (Summer 2027/2028)
         `);
         break;
@@ -144,13 +113,13 @@ function initTerminal() {
    - Fail-closed read-only posture assessor with STS caller account validation.
    - Terraform plan gate with 4 blocking checks (public access, encryption removal, wildcard admin, open ports).
    - SARIF 2.1.0 export, offline tests, Bandit & Ruff checks.
-   - GitHub: <a href="https://github.com/shri-jadhav/VYRA" target="_blank" style="color:#58a6ff;">github.com/shri-jadhav/VYRA</a>
+   - GitHub: <a href="https://github.com/shri-jadhav/VYRA" target="_blank" style="color:#38bdf8;">github.com/shri-jadhav/VYRA</a>
 
 2. <span class="term-cmd">Wazuh SOC Homelab</span> [SIEM & Detection Engineering]
    - Single-node Wazuh 4.14.9 SIEM + Windows Security event forwarding over TLS.
    - Python correlation engine: 6 ATT&CK-mapped rules (brute force, spraying, MFA fatigue, privesc).
    - Validated via 37 unit tests & 10-scenario synthetic benchmark.
-   - GitHub: <a href="https://github.com/shri-jadhav/homelab.lv4" target="_blank" style="color:#58a6ff;">github.com/shri-jadhav/homelab.lv4</a>
+   - GitHub: <a href="https://github.com/shri-jadhav/homelab.lv4" target="_blank" style="color:#38bdf8;">github.com/shri-jadhav/homelab.lv4</a>
 
 3. <span class="term-cmd">DrainSentinel</span> [AWS Serverless Storm Drain Risk Platform]
    - FastAPI on AWS Lambda, DynamoDB encryption + PITR, S3 presigned URLs, AWS SAM.
@@ -159,7 +128,7 @@ function initTerminal() {
 4. <span class="term-cmd">ZeroGate Cloud</span> [Zero Trust Access & Identity Security]
    - NIST SP 800-207 aligned identity-aware proxy with Keycloak & AWS IAM OIDC (no static keys).
    - Policy-as-code CI checks with OPA/Conftest & Wazuh telemetry correlation.
-   - GitHub: <a href="https://github.com/shri-jadhav/ZeroGate" target="_blank" style="color:#58a6ff;">github.com/shri-jadhav/ZeroGate</a>
+   - GitHub: <a href="https://github.com/shri-jadhav/ZeroGate" target="_blank" style="color:#38bdf8;">github.com/shri-jadhav/ZeroGate</a>
         `);
         break;
 
@@ -169,7 +138,7 @@ function initTerminal() {
 • <span class="term-cmd">Microsoft Midnight Blizzard (2024)</span>: Password spraying against non-MFA legacy tenant, OAuth token escalation, high-volume Exchange access.
 • <span class="term-cmd">Change Healthcare Ransomware (2024)</span>: Single-factor portal credential compromise, lateral movement, catastrophic healthcare supply chain impact.
 • <span class="term-cmd">Colonial Pipeline Ransomware (2021)</span>: Dark-web credential on unmonitored legacy VPN, lack of OT/IT segmentation, proactive pipeline shutdown.
-• Full SOC Reports Repository: <a href="https://github.com/shri-jadhav/soc-incident-reports" target="_blank" style="color:#58a6ff;">github.com/shri-jadhav/soc-incident-reports</a>
+• Full SOC Reports Repository: <a href="https://github.com/shri-jadhav/soc-incident-reports" target="_blank" style="color:#38bdf8;">github.com/shri-jadhav/soc-incident-reports</a>
         `);
         break;
 
@@ -208,17 +177,16 @@ function initTerminal() {
       case 'contact':
         appendOutput(`
 <span class="term-success">Direct Contact Coordinates:</span>
-• Email:    <a href="mailto:shripadjadhav1979@gmail.com" style="color:#58a6ff;">shripadjadhav1979@gmail.com</a>
+• Email:    <a href="mailto:shripadjadhav1979@gmail.com" style="color:#38bdf8;">shripadjadhav1979@gmail.com</a>
 • Phone:    +91 9892301256
+• LinkedIn: <a href="https://www.linkedin.com/in/shripad-jadhav-b47099320" target="_blank" style="color:#38bdf8;">linkedin.com/in/shripad-jadhav-b47099320</a>
+• GitHub:   <a href="https://github.com/shri-jadhav" target="_blank" style="color:#38bdf8;">github.com/shri-jadhav</a>
 • Location: Mumbai, Maharashtra, India
-• GitHub:   <a href="https://github.com/shri-jadhav" target="_blank" style="color:#58a6ff;">github.com/shri-jadhav</a>
-• LinkedIn: Available in header / footer
         `);
         break;
 
       case 'theme':
-        const themeBtn = document.getElementById('themeToggle');
-        if (themeBtn) themeBtn.click();
+        appendOutput(`<span class="term-accent">Theme locked: Precision Dark SOC Mode is permanently active.</span>`);
         break;
 
       case 'clear':
@@ -242,7 +210,7 @@ function initTerminal() {
 }
 
 /* ==========================================================================
-   Project Category Filter Tabs
+   Project Category Filter Tabs (Segmented Control)
    ========================================================================== */
 function initProjectFilters() {
   const filterBtns = document.querySelectorAll('.filter-btn');
@@ -334,22 +302,22 @@ function initMitreExplorer() {
         panel.innerHTML = `
           <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
             <div>
-              <span class="badge badge-blue" style="font-family:var(--font-mono);">${techId}</span>
-              <strong style="font-size:1.1rem; color:var(--text-primary); margin-left:0.5rem;">${data.name}</strong>
+              <span class="badge badge-cyan" style="font-family:var(--font-mono);">${techId}</span>
+              <strong style="font-size:1.05rem; color:#ffffff; margin-left:0.5rem;">${data.name}</strong>
             </div>
             <span class="badge badge-amber">${data.tactic}</span>
           </div>
           <div style="margin-bottom:0.75rem;">
-            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Telemetry & Log Sources:</div>
-            <div style="font-size:0.875rem; font-family:var(--font-mono); color:var(--text-secondary); background:var(--bg-card); padding:0.5rem 0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">${escapeHTML(data.dataSource)}</div>
+            <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Telemetry & Log Sources:</div>
+            <div style="font-size:0.85rem; font-family:var(--font-mono); color:var(--text-secondary); background:rgba(255,255,255,0.03); padding:0.5rem 0.75rem; border-radius:var(--radius-xs); border:1px solid var(--border-subtle);">${escapeHTML(data.dataSource)}</div>
           </div>
           <div style="margin-bottom:0.75rem;">
-            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Detection Engineering Logic:</div>
-            <div style="font-size:0.875rem; color:var(--text-secondary); line-height:1.5;">${escapeHTML(data.detectionRule)}</div>
+            <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Detection Engineering Logic:</div>
+            <div style="font-size:0.85rem; color:var(--text-secondary); line-height:1.5;">${escapeHTML(data.detectionRule)}</div>
           </div>
           <div>
-            <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Homelab & Capstone Validation:</div>
-            <div style="font-size:0.875rem; color:var(--accent-emerald); font-weight:500; line-height:1.5;">${escapeHTML(data.homelabValidation)}</div>
+            <div style="font-size:0.725rem; font-family:var(--font-mono); text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Homelab & Capstone Validation:</div>
+            <div style="font-size:0.85rem; color:var(--accent-emerald); font-weight:500; line-height:1.5;">${escapeHTML(data.homelabValidation)}</div>
           </div>
         `;
       }
@@ -365,20 +333,19 @@ const projectDetails = {
     title: 'VYRA | AWS Cloud Security Workbench',
     subtitle: 'Fail-Closed Posture Assessor & Shift-Left Terraform Policy Gate',
     github: 'https://github.com/shri-jadhav/VYRA',
-    tags: ['Python', 'AWS STS / S3 / IAM / CloudTrail', 'Terraform', 'SARIF 2.1.0', 'pytest', 'Bandit', 'Ruff'],
     content: `
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Architecture & Security Design</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Architecture & Security Design</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         VYRA was engineered around a core zero-trust tenet: <strong>never trust caller assumptions</strong>. Before auditing any AWS service, VYRA calls <code>sts:GetCallerIdentity</code> and verifies that the evaluated account ID matches an explicit whitelist. If the validation fails, execution terminates immediately (fail-closed), preventing misconfigured cross-account audits.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Zero-Data-Leak Audit Policy</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Zero-Data-Leak Audit Policy</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Unlike broad CSPM scrapers, VYRA operates on purely metadata and configuration queries. S3 object contents, database rows, and secret payloads are strictly excluded. Read operations target S3 PublicAccessBlock, IAM inline and attached policies, CloudTrail multi-region logging, and GuardDuty detector statuses.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Terraform CI Plan Gate</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Terraform CI Plan Gate</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Integrates into CI/CD pipelines to intercept Terraform plans before deployment. Four blocking gates enforce:
-        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.9rem;">
+        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.875rem;">
           <li>Public bucket policies or ACLs granting global access</li>
           <li>Removal or disabling of server-side encryption (SSE-KMS / AES-256)</li>
           <li>Wildcard admin permissions (<code>Action: "*", Resource: "*"</code>) in IAM policies</li>
@@ -392,24 +359,23 @@ const projectDetails = {
     title: 'Wazuh SOC Homelab | SIEM & Detection Engineering',
     subtitle: 'TLS Event Streaming, Sigma Rules & 37 Unit-Tested Behavioral Correlations',
     github: 'https://github.com/shri-jadhav/homelab.lv4',
-    tags: ['Wazuh 4.14.9', 'Docker', 'WSL2', 'Python', 'Windows Security Events', 'Sigma', 'MITRE ATT&CK'],
     content: `
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Homelab Topology & Ingestion</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Homelab Topology & Ingestion</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Configured a resilient, locally bound single-node Wazuh SIEM manager running on Ubuntu 24.04 via WSL2/Docker. Windows workstation endpoints forward high-fidelity Security Event Logs (4624, 4625, 4728, 4732, 4672) over TLS 1.3 with mutual authentication.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Custom Detection Engine</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Custom Detection Engine</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Developed a custom Python stateful event correlation pipeline that complements Wazuh XML decoders. Six ATT&CK-mapped detection rules analyze temporal event streams:
-        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.9rem;">
+        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.875rem;">
           <li><strong>T1110.001 Brute Force:</strong> Detects bursts of Event 4625 within 60s windows</li>
           <li><strong>T1110.003 Password Spraying:</strong> Multi-target single-password failures over 30 mins</li>
           <li><strong>T1621 MFA Fatigue:</strong> Rapid push challenges followed by unexpected logon success</li>
           <li><strong>T1078 Privilege Escalation:</strong> Rapid membership addition to privileged security groups (4728/4732)</li>
         </ul>
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Verification & Synthetic Benchmark</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Verification & Synthetic Benchmark</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Validated with a comprehensive test suite of <strong>37 unit tests</strong> and a 10-scenario synthetic adversary replay script simulating realistic lateral movement and credential theft without polluting production telemetry.
       </p>
     `
@@ -418,24 +384,23 @@ const projectDetails = {
     title: 'DrainSentinel | AWS Serverless Storm Drain Risk Platform',
     subtitle: 'Serverless GIS Architecture with End-to-End Least-Privilege IAM & KMS Encryption',
     github: 'https://github.com/shri-jadhav',
-    tags: ['Python', 'FastAPI', 'AWS Lambda', 'DynamoDB', 'S3', 'AWS SAM', 'React', 'Leaflet'],
     content: `
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Serverless Architecture & Role</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Serverless Architecture & Role</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Co-developed a high-scale serverless platform that maps stormwater drain blockage risks across municipal zones. Serves a responsive React + Leaflet map interface backed by FastAPI services deployed to AWS Lambda via API Gateway.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Security Implementation & Infrastructure-as-Code</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Security Implementation & Infrastructure-as-Code</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         As lead cloud security architect, configured infrastructure using <strong>AWS SAM</strong> with uncompromising security defaults:
-        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.9rem;">
+        <ul style="margin:0.5rem 0 1rem 1.25rem; color:var(--text-secondary); font-size:0.875rem;">
           <li>DynamoDB tables configured with customer-managed KMS encryption and Point-in-Time Recovery (PITR)</li>
           <li>S3 storage for sensor telemetry and drone imagery configured with private ACLs, bucket policies blocking all public access, and short-lived presigned URLs for client uploads</li>
           <li>Distributed execution traced via AWS X-Ray for anomaly detection and latency debugging</li>
           <li>Zero hardcoded credentials: all secrets passed via NoEcho parameters and AWS Secrets Manager</li>
         </ul>
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Testing</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Testing</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Backed by <strong>33 passing pytest tests</strong> covering API endpoints, authorization boundaries, mock DynamoDB operations (Moto), and GIS boundary calculations.
       </p>
     `
@@ -444,18 +409,17 @@ const projectDetails = {
     title: 'ZeroGate Cloud | Zero Trust Access & Cloud Identity Platform',
     subtitle: 'NIST SP 800-207 Aligned Identity-Aware Proxy & Static Credential Elimination',
     github: 'https://github.com/shri-jadhav/ZeroGate',
-    tags: ['Keycloak', 'Wazuh', 'Terraform', 'OPA / Conftest', 'GitHub Actions', 'AWS IAM OIDC', 'NIST 800-207'],
     content: `
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Zero Trust Core Concept</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Zero Trust Core Concept</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         ZeroGate models an enterprise Zero Trust access architecture aligned with <strong>NIST SP 800-207</strong>. Traditional perimeter VPNs are replaced with identity-aware proxies backed by Keycloak, enforcing contextual access controls based on user role, device health, and network telemetry.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Eliminating Static Cloud Keys</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Eliminating Static Cloud Keys</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Implemented federated role assumption via <strong>AWS IAM OIDC</strong> for GitHub Actions and internal services. Long-lived IAM access keys (<code>AKIA...</code>) are completely eliminated in favor of ephemeral STS credentials.
       </p>
-      <h4 style="margin-bottom:0.5rem; color:var(--text-primary);">Continuous Policy & Telemetry Pipeline</h4>
-      <p style="color:var(--text-secondary); font-size:0.925rem; line-height:1.6; margin-bottom:1rem;">
+      <h4 style="margin-bottom:0.5rem; color:#ffffff;">Continuous Policy & Telemetry Pipeline</h4>
+      <p style="color:var(--text-secondary); font-size:0.9rem; line-height:1.6; margin-bottom:1rem;">
         Employs Open Policy Agent (OPA/Conftest) for policy-as-code linting during pull requests, coupled with Wazuh correlation monitoring identity anomalies, DNS queries, proxy logs, and AWS CloudTrail management events.
       </p>
     `
@@ -507,10 +471,10 @@ function initProjectModals() {
 }
 
 /* ==========================================================================
-   Copy to Clipboard Helpers & Toast
+   Copy to Clipboard Helpers & Toast Feedback
    ========================================================================== */
 function initCopyButtons() {
-  document.querySelectorAll('.copy-btn').forEach(btn => {
+  document.querySelectorAll('.copy-chip-btn').forEach(btn => {
     btn.addEventListener('click', () => {
       const textToCopy = btn.getAttribute('data-copy');
       if (textToCopy) {
@@ -534,7 +498,7 @@ function showToast(message) {
   }
 
   toast.innerHTML = `
-    <svg style="width:1.25rem; height:1.25rem; color:#22c55e;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+    <svg style="width:1.15rem; height:1.15rem; color:#38bdf8;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
       <path d="M20 6L9 17l-5-5"/>
     </svg>
     <span>${escapeHTML(message)}</span>
@@ -543,7 +507,7 @@ function showToast(message) {
   toast.classList.add('show');
   setTimeout(() => {
     toast.classList.remove('show');
-  }, 2800);
+  }, 2600);
 }
 
 /* ==========================================================================
