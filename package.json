@@ -1,0 +1,21 @@
+{
+  "name": "shripad-jadhav-portfolio",
+  "version": "1.0.0",
+  "description": "Clean, minimalist, humanized cybersecurity & cloud security portfolio for Shripad Jadhav",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000 .",
+    "dev": "npx serve -l 3000 ."
+  },
+  "keywords": [
+    "cybersecurity",
+    "portfolio",
+    "cloud-security",
+    "wazuh",
+    "soc",
+    "aws",
+    "detection-engineering"
+  ],
+  "author": "Shripad Jadhav <shripadjadhav1979@gmail.com>",
+  "license": "MIT"
+}

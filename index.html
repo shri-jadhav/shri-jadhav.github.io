@@ -1,0 +1,1036 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shripad Jadhav | Cybersecurity & Cloud Security Engineer</title>
+  
+  <!-- SEO & Social Meta Tags -->
+  <meta name="description" content="Portfolio of Shripad Jadhav - Cybersecurity Undergraduate at NMIMS Mumbai specializing in Cloud Security, Detection Engineering, Wazuh SIEM, and SOC Operations.">
+  <meta name="keywords" content="Shripad Jadhav, Cybersecurity, Cloud Security, SOC, Wazuh, AWS Security, Detection Engineering, MITRE ATT&CK, Terraform">
+  <meta name="author" content="Shripad Jadhav">
+  <meta property="og:title" content="Shripad Jadhav | Cybersecurity & Cloud Security Portfolio">
+  <meta property="og:description" content="Fail-closed AWS security tooling, Wazuh SIEM correlation, and adversary tradecraft analysis.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://shri-jadhav.github.io">
+
+  <!-- Clean Google Fonts (Plus Jakarta Sans & JetBrains Mono) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Core CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>">
+</head>
+<body>
+
+  <!-- Site Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrapper">
+      <a href="#" class="logo-brand">
+        <span class="logo-badge">SJ</span>
+        <span>Shripad Jadhav</span>
+        <span class="logo-status">
+          <span class="status-dot"></span>
+          <span>Open to Roles</span>
+        </span>
+      </a>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#threats" class="nav-link">Threat Reports</a></li>
+          <li><a href="#experience" class="nav-link">SOC Experience</a></li>
+          <li><a href="#mitre" class="nav-link">MITRE Matrix</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#certs" class="nav-link">Certs</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button id="termToggleBtn" class="term-toggle-btn" title="Open Interactive SOC Terminal" aria-label="Terminal Mode">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="4 17 10 11 4 5"/>
+            <line x1="12" y1="19" x2="20" y2="19"/>
+          </svg>
+        </button>
+
+        <button id="themeToggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme" aria-label="Toggle Theme">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm">Get in Touch</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero-section" id="about">
+      <div class="container">
+        <div class="hero-pill-badge">
+          <span class="status-dot"></span>
+          <span>B.Tech CSE (Cybersecurity) @ NMIMS Mumbai • Expected 2028</span>
+        </div>
+
+        <h1 class="hero-title">
+          Engineering <span class="gradient-text">Fail-Closed</span> Cloud Defense & SOC Telemetry.
+        </h1>
+
+        <p class="hero-subtitle">
+          I am Shripad Jadhav, a cybersecurity undergraduate focused on cloud security architecture, detection engineering, and SOC operations.
+        </p>
+
+        <p class="hero-description">
+          I build practical security tools that validate callers before taking action, engineer telemetry pipelines in Wazuh and Splunk that turn raw logs into actionable incident detections, and analyze real-world adversary tradecraft from memory dumps to cloud identity controls.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <span>Explore Projects</span>
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+          </a>
+          <a href="#threats" class="btn btn-secondary">
+            <span>Read Threat Reports</span>
+          </a>
+          <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>GitHub Profile</span>
+          </a>
+          <a href="resume.html" target="_blank" class="btn btn-secondary">
+            <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+            <span>Clean CV View</span>
+          </a>
+        </div>
+
+        <!-- Quick Meta / Summary Grid -->
+        <div class="hero-quick-meta">
+          <div class="meta-item">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="meta-label">Primary Focus</div>
+              <div class="meta-value">Cloud Security & Detection Eng.</div>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div>
+              <div class="meta-label">Core Tooling</div>
+              <div class="meta-value">AWS, Wazuh, Python, Terraform</div>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 14 14"/></svg>
+            </div>
+            <div>
+              <div class="meta-label">Location & Timezone</div>
+              <div class="meta-value">Mumbai, India (IST / UTC+5:30)</div>
+            </div>
+          </div>
+
+          <div class="meta-item">
+            <div class="meta-icon">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div>
+              <div class="meta-label">Verification Suite</div>
+              <div class="meta-value">70+ Unit Tests & Synthetic Scenarios</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Engineering Philosophy (Humanized) -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Philosophy</span>
+          <h2 class="section-title">How I Approach Security Engineering</h2>
+          <p class="section-desc">Security isn't an afterthought checklist or noisy alert queue; it is an active discipline of architecture, behavioral telemetry, and threat comprehension.</p>
+        </div>
+
+        <div class="philosophy-grid">
+          <div class="philosophy-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+              Fail-Closed by Design
+            </h3>
+            <p>
+              I believe tools must refuse to proceed when state cannot be explicitly trusted. In <strong>VYRA</strong>, STS caller account verification aborts execution before inspecting any AWS resource, ensuring zero inadvertent cross-account leakage.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              Telemetry Over Noise
+            </h3>
+            <p>
+              Alert fatigue destroys SOC effectiveness. In my <strong>Wazuh SOC Homelab</strong>, I pair Windows Security logs (4624, 4625, 4728) with a 6-rule correlation engine that tests for multi-target password spraying and MFA fatigue instead of naive one-off thresholds.
+            </p>
+          </div>
+
+          <div class="philosophy-card">
+            <h3>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
+              Adversary-Centric Curiosity
+            </h3>
+            <p>
+              Effective defense requires knowing how adversaries operate. My research into attacks like <strong>Midnight Blizzard</strong> and <strong>Change Healthcare</strong> directly shapes my policy gates and identity federation checks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive SOC Terminal Console -->
+    <section class="section" style="padding-top:2rem;">
+      <div class="container">
+        <div class="section-header" style="margin-bottom:1.5rem;">
+          <span class="section-eyebrow">// Live CLI</span>
+          <h2 class="section-title">Interactive SOC Workstation</h2>
+          <p class="section-desc">Run commands or click quick action chips to inspect architectures, telemetry, and contact credentials directly.</p>
+        </div>
+
+        <div class="terminal-container" id="socTerminal">
+          <div class="terminal-header">
+            <div class="term-controls">
+              <span class="term-dot red"></span>
+              <span class="term-dot yellow"></span>
+              <span class="term-dot green"></span>
+            </div>
+            <div class="term-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="4 17 10 11 4 5"/><line x1="12" y1="19" x2="20" y2="19"/></svg>
+              <span>shripad@soc-workstation: ~ (zsh)</span>
+            </div>
+            <span class="badge badge-mono" style="font-size:0.7rem; padding:0.1rem 0.4rem;">v1.4.2</span>
+          </div>
+
+          <div class="terminal-body" id="termBody">
+            <div class="term-output-line">
+              <span class="term-success">● Connected to Shripad Jadhav's SOC Workstation.</span> Type <span class="term-cmd">help</span> or click a quick command below.
+            </div>
+            <div class="term-output-line">
+              <span class="term-muted">System: Ubuntu 24.04 LTS (WSL2) | Wazuh 4.14.9 | Python 3.12 | AWS CLI v2</span>
+            </div>
+          </div>
+
+          <div class="term-quick-chips">
+            <span class="term-chip-label">Quick Execute:</span>
+            <button class="term-chip" data-cmd="bio">bio</button>
+            <button class="term-chip" data-cmd="projects">projects</button>
+            <button class="term-chip" data-cmd="threats">threats</button>
+            <button class="term-chip" data-cmd="mitre">mitre</button>
+            <button class="term-chip" data-cmd="skills">skills</button>
+            <button class="term-chip" data-cmd="certs">certs</button>
+            <button class="term-chip" data-cmd="contact">contact</button>
+            <button class="term-chip" data-cmd="clear">clear</button>
+          </div>
+
+          <div style="padding: 0.5rem 1.25rem 0.85rem; background-color: var(--term-bg); border-top: 1px solid rgba(255,255,255,0.05);">
+            <div class="term-input-row">
+              <span class="term-prompt">shripad@soc-workstation:~$</span>
+              <input type="text" id="termInput" class="term-input" placeholder="type 'help', 'projects', 'mitre'..." autocomplete="off" spellcheck="false">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Selected Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Production Security Code</span>
+          <h2 class="section-title">Selected Projects & Homelabs</h2>
+          <p class="section-desc">Production-grade security workbenches, serverless backends, and detection engineering homelabs with strict test validation.</p>
+        </div>
+
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">All Projects (4)</button>
+          <button class="filter-btn" data-filter="cloud">Cloud Security</button>
+          <button class="filter-btn" data-filter="siem">SIEM & Detection</button>
+          <button class="filter-btn" data-filter="devsecops">DevSecOps & Fullstack</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 1: VYRA -->
+          <article class="project-card" data-category="cloud devsecops">
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge badge-blue">AWS Cloud Security</span>
+                <span class="badge badge-mono">SARIF 2.1.0</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shri-jadhav/VYRA" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">VYRA</h3>
+            <div class="project-tagline">AWS Cloud Security Workbench & Terraform Gate</div>
+
+            <p class="project-desc">
+              A read-only, fail-closed AWS posture workbench that verifies STS callers against expected account IDs before assessing S3, IAM, CloudTrail, Config, and GuardDuty. Operates with zero customer data access.
+            </p>
+
+            <ul class="project-highlights">
+              <li><strong>Fail-Closed STS Gate:</strong> Validates STS caller account ID before querying any AWS API.</li>
+              <li><strong>Terraform Plan Gate:</strong> 4 blocking checks for public access, encryption removal, wildcard admin IAM (<code>*:*</code>), and exposed admin ports.</li>
+              <li><strong>Code Quality:</strong> Exports SARIF 2.1.0 to GitHub Code Scanning; linted with Ruff and Bandit.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">AWS STS/S3/IAM</span>
+              <span class="tech-tag">CloudTrail</span>
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">SARIF</span>
+              <span class="tech-tag">pytest</span>
+              <span class="tech-tag">Bandit</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="metric-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                Fail-Closed & Offline Tested
+              </span>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="vyra">
+                Inspect Architecture
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 2: Wazuh SOC Homelab -->
+          <article class="project-card" data-category="siem">
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge badge-green">Detection Engineering</span>
+                <span class="badge badge-mono">Wazuh 4.14.9</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shri-jadhav/homelab.lv4" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">Wazuh SOC Homelab</h3>
+            <div class="project-tagline">SIEM & Detection Engineering Lab</div>
+
+            <p class="project-desc">
+              Locally bound single-node Wazuh SIEM receiving Windows Security events (4624, 4625, 4728/4732) over TLS, backed by a custom Python temporal correlation engine.
+            </p>
+
+            <ul class="project-highlights">
+              <li><strong>6 ATT&CK Correlation Rules:</strong> Real-time detection for brute force, password spraying, MFA fatigue, and privilege escalation.</li>
+              <li><strong>Rigorous Verification:</strong> 37 unit tests covering state transitions and alert thresholds.</li>
+              <li><strong>Adversary Benchmark:</strong> 10-scenario synthetic benchmark simulating multi-stage credential theft.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Wazuh 4.14.9</span>
+              <span class="tech-tag">Docker</span>
+              <span class="tech-tag">WSL2</span>
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">WinEvents</span>
+              <span class="tech-tag">Sigma</span>
+              <span class="tech-tag">MITRE ATT&CK</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="metric-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                37 Tests Passed • 10 Scenarios
+              </span>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="wazuh">
+                Inspect Architecture
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 3: DrainSentinel -->
+          <article class="project-card" data-category="cloud devsecops">
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge badge-amber">AWS Serverless</span>
+                <span class="badge badge-mono">Team Project</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="icon-link" title="GitHub Profile">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">DrainSentinel</h3>
+            <div class="project-tagline">AWS Serverless Storm Drain Risk Platform</div>
+
+            <p class="project-desc">
+              Co-developed a GIS serverless platform mapping storm-drain risk and scheduling inspections through a React + Leaflet dashboard backed by FastAPI on AWS Lambda.
+            </p>
+
+            <ul class="project-highlights">
+              <li><strong>Infrastructure-as-Code:</strong> AWS SAM template with strict least-privilege IAM policies.</li>
+              <li><strong>Data Protection:</strong> DynamoDB KMS encryption & PITR; private S3 with time-limited presigned URLs.</li>
+              <li><strong>Observability & Secrets:</strong> AWS X-Ray tracing and CloudFormation NoEcho parameters for zero secret leaks.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">FastAPI</span>
+              <span class="tech-tag">AWS Lambda</span>
+              <span class="tech-tag">DynamoDB</span>
+              <span class="tech-tag">S3</span>
+              <span class="tech-tag">AWS SAM</span>
+              <span class="tech-tag">TypeScript</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="metric-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                33 Passing pytest Tests
+              </span>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="drainsentinel">
+                Inspect Architecture
+              </button>
+            </div>
+          </article>
+
+          <!-- Project 4: ZeroGate Cloud -->
+          <article class="project-card" data-category="cloud devsecops">
+            <div class="project-top">
+              <div class="project-badges">
+                <span class="badge badge-rose">Zero Trust & IAM</span>
+                <span class="badge badge-mono">NIST SP 800-207</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/shri-jadhav/ZeroGate" target="_blank" rel="noopener noreferrer" class="icon-link" title="View Source on GitHub">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                </a>
+              </div>
+            </div>
+
+            <h3 class="project-title">ZeroGate Cloud</h3>
+            <div class="project-tagline">Zero Trust Access & Cloud Identity Platform</div>
+
+            <p class="project-desc">
+              Enterprise Zero Trust security platform providing identity-aware access to internal apps and federated AWS roles without long-lived static credentials, aligned with NIST SP 800-207.
+            </p>
+
+            <ul class="project-highlights">
+              <li><strong>Zero Static Keys:</strong> Replaces hardcoded credentials with ephemeral AWS IAM OIDC federation.</li>
+              <li><strong>Policy-as-Code:</strong> CI security checks via Open Policy Agent (OPA/Conftest).</li>
+              <li><strong>Unified Telemetry:</strong> Wazuh correlation across identity logs, DNS queries, proxy logs, and CloudTrail.</li>
+            </ul>
+
+            <div class="project-tech-tags">
+              <span class="tech-tag">Keycloak</span>
+              <span class="tech-tag">Wazuh</span>
+              <span class="tech-tag">Terraform</span>
+              <span class="tech-tag">OPA/Conftest</span>
+              <span class="tech-tag">GitHub Actions</span>
+              <span class="tech-tag">AWS OIDC</span>
+            </div>
+
+            <div class="project-footer">
+              <span class="metric-pill">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg>
+                OIDC Federated Identity
+              </span>
+              <button class="btn btn-secondary btn-sm open-modal-btn" data-project="zerogate">
+                Inspect Architecture
+              </button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Threat Analysis Reports Section -->
+    <section class="section" id="threats">
+      <div class="container">
+        <div class="section-header">
+          <div style="display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem;">
+            <div>
+              <span class="section-eyebrow">// Threat Hunting & Incident Post-Mortems</span>
+              <h2 class="section-title">Threat Analysis Reports</h2>
+              <p class="section-desc">Detailed incident investigations breaking down real-world kill chains, IOCs, and detection lessons.</p>
+            </div>
+            <a href="https://github.com/shri-jadhav/soc-incident-reports" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+              <span>View All Reports on GitHub</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="threat-grid">
+          <!-- Report 1: Midnight Blizzard -->
+          <article class="threat-card">
+            <div class="threat-header">
+              <span class="badge badge-rose">Nation-State APT</span>
+              <span class="threat-year">2024</span>
+            </div>
+
+            <h3 class="threat-title">Microsoft Midnight Blizzard</h3>
+            <div class="threat-vector">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Password Spraying & OAuth Token Abuse</span>
+            </div>
+
+            <p class="threat-body">
+              Analysis of Nobelium's campaign against corporate email systems. The adversary sprayed passwords against a non-MFA legacy test tenant, pivoted to grant high-privilege permissions to an OAuth app, and accessed leadership mailboxes.
+            </p>
+
+            <ul class="threat-keypoints">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Root Cause:</strong> Legacy unmonitored test tenant without Conditional Access or MFA.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Detection Rule:</strong> Flag sudden Exchange <code>MailItemsAccessed</code> spikes from multi-tenant enterprise apps.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Remediation:</strong> Automated decommissioning of inactive test tenants and FIDO2 enforcement.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Report 2: Change Healthcare -->
+          <article class="threat-card">
+            <div class="threat-header">
+              <span class="badge badge-amber">ALPHV / BlackCat</span>
+              <span class="threat-year">2024</span>
+            </div>
+
+            <h3 class="threat-title">Change Healthcare Ransomware</h3>
+            <div class="threat-vector">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Single-Factor Remote Portal Credential Theft</span>
+            </div>
+
+            <p class="threat-body">
+              Deep-dive into the incident response, containment priorities, and third-party supplier dependencies of the largest healthcare clearinghouse disruption in US history.
+            </p>
+
+            <ul class="threat-keypoints">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Initial Access:</strong> Compromised credentials on an external Citrix portal lacking multi-factor authentication.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Lateral Movement:</strong> Rapid exfiltration of 6TB+ of sensitive healthcare data followed by ransomware encryption.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Takeaway:</strong> Zero single-factor access policies, third-party dependency mapping, and immutable backup isolation.</span>
+              </li>
+            </ul>
+          </article>
+
+          <!-- Report 3: Colonial Pipeline -->
+          <article class="threat-card">
+            <div class="threat-header">
+              <span class="badge badge-blue">DarkSide Ransomware</span>
+              <span class="threat-year">2021</span>
+            </div>
+
+            <h3 class="threat-title">Colonial Pipeline Ransomware</h3>
+            <div class="threat-vector">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+              <span>Legacy VPN Credential Leak & OT Shutdown</span>
+            </div>
+
+            <p class="threat-body">
+              Investigation into the attack timeline, access control weaknesses, network segmentation failures, and containment choices that caused nationwide fuel pipeline shutdown.
+            </p>
+
+            <ul class="threat-keypoints">
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Entry Point:</strong> Reused password found on a dark-web dump used against an unmanaged legacy VPN account.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Containment Impact:</strong> OT pipeline was shut down proactively due to lack of visibility into billing systems.</span>
+              </li>
+              <li>
+                <span class="bullet-icon">▸</span>
+                <span><strong>Lesson:</strong> Stringent air-gapping between IT/OT domains and automated stale account disabling.</span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section (LaunchED Global) -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Hands-on Industry Experience</span>
+          <h2 class="section-title">SOC Capstone Internship</h2>
+          <p class="section-desc">Tier-2 SOC investigation, threat hunting, and host hardening at LaunchED Global.</p>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Cyber Security Intern</h3>
+                  <div class="timeline-company">LaunchED Global (Remote)</div>
+                </div>
+                <div class="timeline-period">Jun 2026 — Jul 2026</div>
+              </div>
+
+              <p class="timeline-desc">
+                Completed an intensive Tier-2 SOC investigation capstone utilizing <strong>Wireshark, Splunk, Metasploit, PowerShell, Kali Linux</strong>, and the <strong>MITRE ATT&CK framework</strong> to investigate simulated and real-world intrusion artifacts.
+              </p>
+
+              <div class="experience-deliverables">
+                <div class="deliverable-box">
+                  <div class="deliverable-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                    <span>Host Hardening & Forensics</span>
+                  </div>
+                  <div class="deliverable-text">
+                    Hardened a Windows production host with 5 targeted PowerShell firewall rules. Traced an SSH brute-force attack in Linux <code>auth.log</code> to unauthorized root elevation.
+                  </div>
+                </div>
+
+                <div class="deliverable-box">
+                  <div class="deliverable-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+                    <span>Malware Traffic PCAP Analysis</span>
+                  </div>
+                  <div class="deliverable-text">
+                    Analyzed raw packet captures in Wireshark to isolate <strong>XLMRav</strong> and <strong>AsyncRAT</strong> command-and-control (C2) beaconing patterns and extract active IOCs.
+                  </div>
+                </div>
+
+                <div class="deliverable-box">
+                  <div class="deliverable-title">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+                    <span>Conti Ransomware & EternalBlue</span>
+                  </div>
+                  <div class="deliverable-text">
+                    Investigated EternalBlue (MS17-010) exploit behavior in TryHackMe. Used Splunk to reconstruct a full Conti ransomware kill chain spanning ProxyShell, LSASS memory dumping, and ransom note delivery.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive MITRE ATT&CK Matrix Explorer -->
+    <section class="section" id="mitre">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Detection Engineering Mapping</span>
+          <h2 class="section-title">MITRE ATT&CK Coverage Matrix</h2>
+          <p class="section-desc">Click any adversary technique below to view the telemetry source, detection correlation logic, and validation methodology.</p>
+        </div>
+
+        <div class="mitre-explorer">
+          <div class="mitre-grid">
+            <div class="mitre-tactic-col">
+              <div class="mitre-tactic-name">Initial Access</div>
+              <button class="mitre-tech-btn active" data-tech="T1110">
+                <span class="mitre-tech-id">T1110</span>
+                <span>Brute Force</span>
+              </button>
+            </div>
+
+            <div class="mitre-tactic-col">
+              <div class="mitre-tactic-name">Credential Access</div>
+              <button class="mitre-tech-btn" data-tech="T1110.003">
+                <span class="mitre-tech-id">T1110.003</span>
+                <span>Password Spraying</span>
+              </button>
+              <button class="mitre-tech-btn" data-tech="T1003">
+                <span class="mitre-tech-id">T1003</span>
+                <span>OS Credential Dump</span>
+              </button>
+            </div>
+
+            <div class="mitre-tactic-col">
+              <div class="mitre-tactic-name">Defense Evasion</div>
+              <button class="mitre-tech-btn" data-tech="T1621">
+                <span class="mitre-tech-id">T1621</span>
+                <span>MFA Fatigue / Spam</span>
+              </button>
+              <button class="mitre-tech-btn" data-tech="T1078">
+                <span class="mitre-tech-id">T1078</span>
+                <span>Valid Accounts</span>
+              </button>
+            </div>
+
+            <div class="mitre-tactic-col">
+              <div class="mitre-tactic-name">Lateral Movement</div>
+              <button class="mitre-tech-btn" data-tech="T1210">
+                <span class="mitre-tech-id">T1210</span>
+                <span>Remote Services (SMB)</span>
+              </button>
+            </div>
+          </div>
+
+          <div class="mitre-detail-panel" id="mitreDetailPanel">
+            <!-- Populated dynamically via JS -->
+            <div style="display:flex; align-items:center; justify-content:space-between; margin-bottom:0.75rem; flex-wrap:wrap; gap:0.5rem;">
+              <div>
+                <span class="badge badge-blue" style="font-family:var(--font-mono);">T1110</span>
+                <strong style="font-size:1.1rem; color:var(--text-primary); margin-left:0.5rem;">Brute Force</strong>
+              </div>
+              <span class="badge badge-amber">Credential Access</span>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Telemetry & Log Sources:</div>
+              <div style="font-size:0.875rem; font-family:var(--font-mono); color:var(--text-secondary); background:var(--bg-card); padding:0.5rem 0.75rem; border-radius:var(--radius-sm); border:1px solid var(--border-subtle);">Windows Event ID 4625 (Logon Failure), Linux auth.log, AWS CloudTrail ConsoleLogin</div>
+            </div>
+            <div style="margin-bottom:0.75rem;">
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Detection Engineering Logic:</div>
+              <div style="font-size:0.875rem; color:var(--text-secondary); line-height:1.5;">Sigma & Python: Triggers when &gt;= 5 failed authentication events occur within 60 seconds from a single IP/host with sub-status 0xC000006A (bad password).</div>
+            </div>
+            <div>
+              <div style="font-size:0.75rem; text-transform:uppercase; letter-spacing:0.05em; color:var(--text-muted); font-weight:700; margin-bottom:0.25rem;">Homelab & Capstone Validation:</div>
+              <div style="font-size:0.875rem; color:var(--accent-emerald); font-weight:500; line-height:1.5;">Simulated via Hydra & PowerShell test harness. Verified 100% catch rate in Wazuh SOC homelab benchmark without alerting on normal user typo rate.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Technical Skills Section -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Technical Stack</span>
+          <h2 class="section-title">Skills & Capabilities</h2>
+          <p class="section-desc">Practical proficiency across programming, cloud infrastructure, detection pipelines, and security tooling.</p>
+        </div>
+
+        <div class="skills-container">
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              <span>Languages</span>
+            </h3>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">Python (Advanced Security Tooling)</span>
+              <span class="skill-pill">JavaScript</span>
+              <span class="skill-pill">SQL</span>
+              <span class="skill-pill">C++</span>
+              <span class="skill-pill">Java</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span>Security Engineering</span>
+            </h3>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">Threat Detection</span>
+              <span class="skill-pill">Event Correlation</span>
+              <span class="skill-pill">MITRE ATT&CK Mapping</span>
+              <span class="skill-pill">SIEM Architecture</span>
+              <span class="skill-pill">Incident Response</span>
+              <span class="skill-pill">Threat Hunting</span>
+              <span class="skill-pill">Malware Analysis</span>
+              <span class="skill-pill">Application Security</span>
+              <span class="skill-pill">OWASP Top 10</span>
+              <span class="skill-pill">OAuth 2.0 / OIDC</span>
+              <span class="skill-pill">RBAC & Least Privilege</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"/></svg>
+              <span>Cloud & DevOps</span>
+            </h3>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">AWS IAM</span>
+              <span class="skill-pill">AWS S3</span>
+              <span class="skill-pill">AWS CloudTrail</span>
+              <span class="skill-pill">AWS GuardDuty</span>
+              <span class="skill-pill">AWS Security Hub</span>
+              <span class="skill-pill">AWS Config</span>
+              <span class="skill-pill">Terraform</span>
+              <span class="skill-pill">Docker</span>
+              <span class="skill-pill">Git</span>
+              <span class="skill-pill">GitHub Actions CI/CD</span>
+              <span class="skill-pill">pytest</span>
+              <span class="skill-pill">SARIF 2.1.0</span>
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3 class="skills-card-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--accent-cyan)" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              <span>Security Tools</span>
+            </h3>
+            <div class="skills-pill-wrap">
+              <span class="skill-pill">Wazuh SIEM</span>
+              <span class="skill-pill">Splunk</span>
+              <span class="skill-pill">Wireshark</span>
+              <span class="skill-pill">Metasploit</span>
+              <span class="skill-pill">Kali Linux</span>
+              <span class="skill-pill">PowerShell</span>
+              <span class="skill-pill">Sigma Rules</span>
+              <span class="skill-pill">tcpdump</span>
+              <span class="skill-pill">Nmap</span>
+              <span class="skill-pill">OPA / Conftest</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education, Certifications & Continuous Training -->
+    <section class="section" id="certs">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Academic & Professional Credentials</span>
+          <h2 class="section-title">Education & Certifications</h2>
+          <p class="section-desc">Academic foundation in cybersecurity engineering complemented by specialized industry training.</p>
+        </div>
+
+        <!-- Education Card -->
+        <div style="background-color:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg); padding:1.75rem; margin-bottom:2rem; box-shadow:var(--shadow-subtle);">
+          <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; gap:0.5rem; margin-bottom:0.5rem;">
+            <div>
+              <span class="badge badge-blue">Degree Program</span>
+              <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-top:0.35rem;">B.Tech in Computer Science and Engineering (Cybersecurity)</h3>
+              <div style="font-size:1rem; font-weight:600; color:var(--accent-primary);">Mukesh Patel School of Technology Management & Engineering (MPSTME)</div>
+              <div style="font-size:0.9rem; color:var(--text-secondary);">NMIMS University, Mumbai, Maharashtra, India</div>
+            </div>
+            <div style="font-family:var(--font-mono); font-size:0.85rem; color:var(--text-muted); font-weight:600;">Expected 2028</div>
+          </div>
+          <p style="font-size:0.925rem; color:var(--text-secondary); line-height:1.6; margin-top:0.75rem;">
+            Rigorous 4-year curriculum covering Cryptography, Network Security, Operating Systems, Cloud Security Architecture, Threat Modeling, and Information Security Management.
+          </p>
+        </div>
+
+        <!-- Certifications Shelf -->
+        <h3 style="font-size:1.2rem; font-weight:700; color:var(--text-primary); margin-bottom:1rem;">Verified Certifications & Training Badges</h3>
+        <div class="certs-shelf">
+          <div class="cert-card">
+            <div class="cert-icon">AWS</div>
+            <div>
+              <div class="cert-title">AWS Academy Graduate — Cloud Security Foundations</div>
+              <div class="cert-issuer">AWS Academy (Digital Credential)</div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon blue">JHU</div>
+            <div>
+              <div class="cert-title">Advanced Malware and Network Anomaly Detection</div>
+              <div class="cert-issuer">Johns Hopkins University / Coursera</div>
+            </div>
+          </div>
+
+          <div class="cert-card">
+            <div class="cert-icon purple">DF</div>
+            <div>
+              <div class="cert-title">Operationalizing Cloud Security</div>
+              <div class="cert-issuer">Deepfence ThreatMapper</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- AWS Training Modules Shelf -->
+        <div style="margin-top:2.5rem; padding:1.75rem; background-color:var(--bg-card); border:1px solid var(--border-subtle); border-radius:var(--radius-lg);">
+          <h3 style="font-size:1.1rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">
+            AWS Training & Certification Specialty Modules
+          </h3>
+          <p style="font-size:0.875rem; color:var(--text-secondary); margin-bottom:1rem;">
+            Completed official deep-dive modules across cloud identity, threat detection, and perimeter defense:
+          </p>
+          <div class="aws-modules-grid">
+            <span class="aws-module-badge">IAM & Identity Federation</span>
+            <span class="aws-module-badge">AWS GuardDuty</span>
+            <span class="aws-module-badge">AWS Detective</span>
+            <span class="aws-module-badge">Security Incident Response</span>
+            <span class="aws-module-badge">AWS Secrets Manager</span>
+            <span class="aws-module-badge">Network Firewall</span>
+            <span class="aws-module-badge">Firewall Manager</span>
+            <span class="aws-module-badge">Amazon Inspector</span>
+            <span class="aws-module-badge">AWS Security Lake</span>
+            <span class="aws-module-badge">Encryption Fundamentals & KMS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-eyebrow">// Get in Touch</span>
+          <h2 class="section-title">Let's Connect & Secure Together</h2>
+          <p class="section-desc">Seeking internship opportunities in Cloud Security, SOC Tier 2/3, and Detection Engineering. Feel free to reach out directly.</p>
+        </div>
+
+        <div class="contact-layout">
+          <div class="contact-info-card">
+            <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">Direct Channels</h3>
+            <p style="font-size:0.925rem; color:var(--text-secondary); line-height:1.6;">
+              Whether you have an inquiry about my projects, wish to review my homelab configurations, or discuss security engineering roles, my inbox is always open.
+            </p>
+
+            <div class="contact-channels">
+              <div class="channel-item">
+                <div class="channel-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-primary)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                  <div>
+                    <div class="channel-label">Email</div>
+                    <a href="mailto:shripadjadhav1979@gmail.com" class="channel-value">shripadjadhav1979@gmail.com</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="shripadjadhav1979@gmail.com">Copy</button>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-emerald)" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                  <div>
+                    <div class="channel-label">Phone</div>
+                    <a href="tel:+919892301256" class="channel-value">+91 9892301256</a>
+                  </div>
+                </div>
+                <button class="copy-btn" data-copy="+919892301256">Copy</button>
+              </div>
+
+              <div class="channel-item">
+                <div class="channel-left">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--accent-amber)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                  <div>
+                    <div class="channel-label">Location</div>
+                    <span class="channel-value">Mumbai, Maharashtra, India</span>
+                  </div>
+                </div>
+                <span class="badge badge-mono">IST (UTC+5:30)</span>
+              </div>
+            </div>
+
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                <span>GitHub</span>
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                <span>LinkedIn</span>
+              </a>
+              <a href="resume.html" target="_blank" class="btn btn-secondary btn-sm">
+                <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                <span>Printable CV</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Quick Email Composition Form -->
+          <form class="contact-form" id="contactForm">
+            <h3 style="font-size:1.35rem; font-weight:700; color:var(--text-primary); margin-bottom:0.5rem;">Send a Direct Message</h3>
+            <p style="font-size:0.925rem; color:var(--text-secondary); margin-bottom:1.5rem;">Pre-fills your local email client with your exact query.</p>
+
+            <div class="form-group">
+              <label for="senderName" class="form-label">Your Name *</label>
+              <input type="text" id="senderName" class="form-control" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderEmail" class="form-label">Your Email *</label>
+              <input type="email" id="senderEmail" class="form-control" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="senderSubject" class="form-label">Subject</label>
+              <input type="text" id="senderSubject" class="form-control" placeholder="Security Internship / Project Inquiry">
+            </div>
+
+            <div class="form-group">
+              <label for="senderMessage" class="form-label">Message *</label>
+              <textarea id="senderMessage" class="form-control" placeholder="Hi Shripad, I saw your work on VYRA and Wazuh..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;">
+              <span>Send Message</span>
+              <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div style="font-weight:700; color:var(--text-primary); margin-bottom:0.25rem;">Shripad Jadhav</div>
+        <div>Cybersecurity Undergraduate &bull; Mumbai, India &bull; Class of 2028</div>
+      </div>
+
+      <div class="footer-links">
+        <a href="#about" class="footer-link">About</a>
+        <a href="#projects" class="footer-link">Projects</a>
+        <a href="#threats" class="footer-link">Threats</a>
+        <a href="#mitre" class="footer-link">MITRE</a>
+        <a href="https://github.com/shri-jadhav" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Project Architecture Modal Dialog -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-content">
+      <div class="modal-header">
+        <div>
+          <h3 id="modalTitle" style="font-size:1.35rem; font-weight:700; color:var(--text-primary);">Project Title</h3>
+          <div id="modalSubtitle" style="font-size:0.875rem; color:var(--accent-primary); font-weight:600; margin-top:0.2rem;">Subtitle</div>
+        </div>
+        <button class="modal-close-btn" id="modalClose" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Injected via JS -->
+      </div>
+      <div style="padding:1rem 1.75rem; background-color:var(--bg-secondary); border-top:1px solid var(--border-subtle); display:flex; justify-content:flex-end; gap:0.75rem;">
+        <a href="#" id="modalGithubLink" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+          <svg class="btn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          <span>View on GitHub</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toastNotice" class="toast-notice"></div>
+
+  <!-- Main JavaScript File -->
+  <script src="js/main.js"></script>
+</body>
+</html>
